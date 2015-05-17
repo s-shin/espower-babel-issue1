@@ -1,0 +1,19 @@
+{
+  "name": "espower-babel-issue1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "espower-babel": "^3.1.0",
+    "power-assert": "^0.11.0"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:espower-babel/guess test/**/*.js",
+    "test2": "mocha --compilers js:espower-babel/guess spec/FooSpec.js",
+    "test3": "mocha --compilers js:espower-babel/guess spec/SymbolicFooSpec.js"
+  },
+  "author": "Shintaro Seki <s2pch.luck@gmail.com>",
+  "private": true,
+  "license": "MIT"
+}
